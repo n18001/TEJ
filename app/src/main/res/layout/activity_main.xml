@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".MainActivity">
+
+    <!-- memory button -->
+    <ImageButton
+        android:id="@+id/memory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/frame_style"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/memory"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/monster" />
+
+
+    <!-- tabacco button -->
+    <ImageButton
+        android:id="@+id/tabacco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/frame_style"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/tabacco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/memory"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+    <!-- medal button -->
+    <ImageButton
+        android:id="@+id/medal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/frame_style"
+        android:contentDescription="@string/image_description"
+        android:scaleType="center"
+        android:src="@drawable/medal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/memory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monster" />
+
+
+    <!-- town button -->
+    <ImageButton
+        android:id="@+id/monster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/frame_style"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/frog_girl"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- heven button -->
+    <ImageButton
+        android:id="@+id/heven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/frame_style"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/heven"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tabacco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+    <!-- monster button title -->
+    <TextView
+        android:id="@+id/town_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/town"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/monster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/monster" />
+
+
+    <!-- medal button title -->
+    <TextView
+        android:id="@+id/medal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/medal"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/medal"
+        app:layout_constraintEnd_toEndOf="@+id/medal"
+        app:layout_constraintStart_toStartOf="@+id/medal" />
+
+
+    <!-- memory button title -->
+    <TextView
+        android:id="@+id/memory_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/memory"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/memory"
+        app:layout_constraintEnd_toEndOf="@+id/memory"
+        app:layout_constraintStart_toStartOf="@+id/memory" />
+
+
+    <!-- heven button title -->
+    <TextView
+        android:id="@+id/heven_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/heven"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/heven"
+        app:layout_constraintEnd_toEndOf="@+id/heven"
+        app:layout_constraintStart_toStartOf="@+id/heven" />
+
+
+    <!-- tabacco button title -->
+    <TextView
+        android:id="@+id/tabacco_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="@string/tabacco"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tabacco"
+        app:layout_constraintEnd_toEndOf="@+id/tabacco"
+        app:layout_constraintStart_toStartOf="@+id/tabacco" />
+
+
+    <!-- guideline vertical 50%-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <!-- guideline horizon 65%-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+
+    <!-- guideline horizon 30% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

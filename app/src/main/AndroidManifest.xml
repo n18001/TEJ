@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ejtabacco">
+
+    <!-- app -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- memory page -->
+        <activity
+            android:name=".Memory"
+            android:label="記録"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- tabacco page -->
+        <activity
+            android:name=".Tabacco"
+            android:label="喫煙所"
+            android:screenOrientation="portrait">
+            <!-- start page setting  -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- medal page -->
+        <activity
+            android:name=".Medal"
+            android:label="勲章"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- heven page -->
+        <activity
+            android:name=".Heven"
+            android:label="天国ランキング"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- tabacco setting page-->
+        <activity
+            android:name=".TabaccoSetting"
+            android:label="銘柄設定"
+            android:screenOrientation="portrait"/>
+
+
+        <!-- menu page -->
+        <activity
+            android:name=".MainActivity"
+            android:label="ヤニかちゅ"
+            android:screenOrientation="portrait"/>
+
+        <!-- monster -->
+        <activity
+            android:name=".Monster"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Leave"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".CharacterSetting"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Limit"
+            android:screenOrientation="portrait"/>
+
+
+        <!--  -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+    <!--
+     **Precautions
+     * It is made only for Nexus 7 (2012) API 27.
+     -->
+
+</manifest>

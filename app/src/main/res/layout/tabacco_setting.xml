@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabaccoSetting"
+    android:background="@drawable/app_background"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <!-- registration button -->
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/tabacco_style"
+        android:text="@string/return_button"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- no1 tabbaco title -->
+    <TextView
+        android:id="@+id/no1_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/no1title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- no1 tabacco name EditText -->
+    <EditText
+        android:id="@+id/no1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no1name"
+        android:maxLength="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/no1_title"
+        app:layout_constraintTop_toBottomOf="@+id/no1_title" />
+
+
+    <!-- no1 tabacco price EditText -->
+    <EditText
+        android:id="@+id/no1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no1price"
+        android:maxLength="4"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no1_name"
+        app:layout_constraintStart_toStartOf="@+id/no1_name"
+        app:layout_constraintTop_toBottomOf="@+id/no1_name" />
+
+
+    <!-- no1 tabacco num EditText -->
+    <EditText
+        android:id="@+id/no1_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no1num"
+        android:maxLength="2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no1_price"
+        app:layout_constraintStart_toStartOf="@+id/no1_price"
+        app:layout_constraintTop_toBottomOf="@+id/no1_price" />
+
+
+    <!-- no2 tabacco title -->
+    <TextView
+        android:id="@+id/no2_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/no2title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/no1_title"
+        app:layout_constraintStart_toStartOf="@+id/no1_title"
+        app:layout_constraintTop_toBottomOf="@+id/no1_num" />
+
+
+    <!-- no2 tabacco name EditText -->
+    <EditText
+        android:id="@+id/no2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no2name"
+        android:maxLength="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no1_num"
+        app:layout_constraintStart_toStartOf="@+id/no1_num"
+        app:layout_constraintTop_toBottomOf="@+id/no2_title" />
+
+
+    <!-- no2 tabacco price EditText -->
+    <EditText
+        android:id="@+id/no2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no2price"
+        android:maxLength="4"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no2_name"
+        app:layout_constraintStart_toStartOf="@+id/no2_name"
+        app:layout_constraintTop_toBottomOf="@+id/no2_name" />
+
+
+    <!-- no2 tabacco num EditText -->
+    <EditText
+        android:id="@+id/no2_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no2num"
+        android:maxLength="2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no2_price"
+        app:layout_constraintStart_toStartOf="@+id/no2_price"
+        app:layout_constraintTop_toBottomOf="@+id/no2_price" />
+
+
+    <!-- no3 tabacco title -->
+    <TextView
+        android:id="@+id/no3_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/no3title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/no2_title"
+        app:layout_constraintStart_toStartOf="@+id/no2_title"
+        app:layout_constraintTop_toBottomOf="@+id/no2_num" />
+
+
+    <!-- no3 tabacco name EditText -->
+    <EditText
+        android:id="@+id/no3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no3name"
+        android:maxLength="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no2_num"
+        app:layout_constraintStart_toStartOf="@+id/no2_num"
+        app:layout_constraintTop_toBottomOf="@+id/no3_title" />
+
+
+    <!-- no3 tabacco price EditText -->
+    <EditText
+        android:id="@+id/no3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no3price"
+        android:maxLength="4"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no3_name"
+        app:layout_constraintStart_toStartOf="@+id/no3_name"
+        app:layout_constraintTop_toBottomOf="@+id/no3_name" />
+
+
+    <!-- no3 tabacco num EditText -->
+    <EditText
+        android:id="@+id/no3_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/no3num"
+        android:maxLength="2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/no3_price"
+        app:layout_constraintStart_toStartOf="@+id/no3_price"
+        app:layout_constraintTop_toBottomOf="@+id/no3_price" />
+
+    <ImageView
+        android:id="@+id/kiseru_frog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image"
+        app:layout_constraintBottom_toTopOf="@+id/return_button"
+        app:layout_constraintEnd_toEndOf="@+id/return_button"
+        app:layout_constraintStart_toStartOf="@+id/return_button"
+        app:srcCompat="@drawable/frog_ceo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

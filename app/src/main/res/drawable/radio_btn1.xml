@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 選択時の設定 -->
+<item android:state_checked="true">
+    <shape android:shape="rectangle">
+        <!-- 背景色 -->
+        <solid android:color="#0f0faa"/>
+        <!-- 枠色 -->
+        <stroke
+            android:width="3dp"
+            android:color="#808080" />
+        <!-- 角度 -->
+        <corners
+            android:bottomLeftRadius="4dp"
+            android:topLeftRadius="4dp" />
+        <!-- 余白 -->
+        <padding
+            android:bottom="5dp"
+            android:right="5dp"
+            android:left="5dp"
+            android:top="5dp" />
+    </shape>
+</item>
+
+
+
+<!-- 非選択時の設定 -->
+<item android:state_checked="false">
+    <shape android:shape="rectangle">
+        <!-- 背景色 -->
+        <solid android:color="#8f8" />
+        <!-- 枠色 -->
+        <stroke
+            android:width="1dp"
+            android:color="#808080" />
+        <!-- 角度 -->
+        <corners
+            android:bottomLeftRadius="4dp"
+            android:topLeftRadius="4dp" />
+        <!-- 余白 -->
+        <padding
+            android:bottom="40dp"
+            android:right="40dp"
+            android:left="40dp"
+            android:top="40dp" />
+    </shape>
+</item>
+</selector>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".Limit">
+
+
+    <TextView
+        android:id="@+id/mainTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limitationtitle1"
+        android:textColor="@color/colorBlack"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/mainTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limitationtitle2"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/mainTitle1"
+        app:layout_constraintStart_toStartOf="@+id/mainTitle1"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle1" />
+
+    <TextView
+        android:id="@+id/mainTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/limitationtitle3"
+        android:textColor="@color/colorBlack"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainTitle2"
+        app:layout_constraintStart_toStartOf="@+id/mainTitle2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/limitDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/limitDay"
+        android:textColor="@color/colorAccent"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainTitle3"
+        app:layout_constraintStart_toStartOf="@+id/mainTitle3"
+        app:layout_constraintTop_toBottomOf="@+id/mainTitle3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

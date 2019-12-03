@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".Memory">
+
+
+    <!-- price title text -->
+    <TextView
+        android:id="@+id/price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/price_title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- total price title -->
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/total_price"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/price_title"
+        app:layout_constraintTop_toBottomOf="@+id/price_title" />
+
+
+    <!-- total price text -->
+    <TextView
+        android:id="@+id/total_price_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom|right"
+        android:hint="@string/price_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/total_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/total_price"
+        app:layout_constraintTop_toTopOf="@+id/total_price"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- total tax title-->
+    <TextView
+        android:id="@+id/total_tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_tax"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/total_price"
+        app:layout_constraintTop_toBottomOf="@+id/total_price" />
+
+
+    <!-- total tax text -->
+    <TextView
+        android:id="@+id/total_tax_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom|right"
+        android:hint="@string/price_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/total_tax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/total_price_text"
+        app:layout_constraintTop_toTopOf="@+id/total_tax"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- today price title-->
+    <TextView
+        android:id="@+id/today_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/today_price"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/total_tax"
+        app:layout_constraintTop_toBottomOf="@+id/total_tax" />
+
+
+    <!-- today price text -->
+    <TextView
+        android:id="@+id/today_price_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom|right"
+        android:hint="@string/price_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/total_tax_price"
+        app:layout_constraintTop_toTopOf="@+id/today_price"
+        app:layout_constraintVertical_bias="0.6"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- count title text -->
+    <TextView
+        android:id="@+id/count_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/count_title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/price_title"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+
+    <!-- total count title-->
+    <TextView
+        android:id="@+id/total_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/total_count"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/count_title"
+        app:layout_constraintTop_toBottomOf="@+id/count_title" />
+
+
+    <!-- total count text -->
+    <TextView
+        android:id="@+id/total_count_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom|right"
+        android:hint="@string/count_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/total_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/today_price_text"
+        app:layout_constraintTop_toTopOf="@+id/total_count"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- today count title-->
+    <TextView
+        android:id="@+id/today_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/today_count"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/total_count"
+        app:layout_constraintTop_toBottomOf="@+id/total_count" />
+
+
+    <!-- today count text -->
+    <TextView
+        android:id="@+id/today_count_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="bottom|right"
+        android:hint="@string/count_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/today_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/total_count_text"
+        app:layout_constraintTop_toTopOf="@+id/today_count"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- time title text-->
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/time_title"
+        android:textColor="@color/colorBlack"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/count_title"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+
+    <!-- lifespan title-->
+    <TextView
+        android:id="@+id/lifespan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/life_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/time_title"
+        app:layout_constraintTop_toBottomOf="@+id/time_title" />
+
+
+    <!-- lifespan text -->
+    <TextView
+        android:id="@+id/lifespan_text"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="bottom|right"
+        android:hint="@string/lifespan_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lifespan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/today_count_text"
+        app:layout_constraintTop_toTopOf="@+id/lifespan"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- lost time title-->
+    <TextView
+        android:id="@+id/lost_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/lost_time"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="@+id/lifespan"
+        app:layout_constraintTop_toBottomOf="@+id/lifespan" />
+
+
+    <!-- lost time text -->
+    <TextView
+        android:id="@+id/lost_time_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom|right"
+        android:hint="@string/lost_time_text"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lost_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/lifespan_text"
+        app:layout_constraintTop_toTopOf="@+id/lost_time"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- guideline horizon 33.3% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+
+    <!-- guideline horizon 66.6% -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.666" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

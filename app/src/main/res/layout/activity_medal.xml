@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Medal"
+    android:background="@drawable/app_background">
+
+    <!-- A RecyclerView with some commonly used attributes -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/medal_title"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/medal_frame"
+            android:gravity="center|left"
+            android:text="@string/medal_title"
+            android:textColor="@color/colorBlack"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/medalCountArea"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center|right"
+            android:textColor="@color/colorBlack"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

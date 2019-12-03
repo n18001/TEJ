@@ -1,0 +1,117 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">EJ Tabacco</string>
+
+    <!-- general string -->
+    <string name="image_description">Image Button</string>
+    <string name="tabacco_image_description">画像</string>
+    <string name="return_button">登録</string>
+    <string name="nothing"> </string>
+    <string name="fire_setting">設定する</string>
+    <string name="cancel">やめる</string>
+    <string name="string">例</string>
+    <string name="none"> </string>
+
+    <!-- main screen -->
+    <string name="memory">記録</string>
+    <string name="tabacco">煙草</string>
+    <string name="medal">勲章</string>
+    <string name="town">逢瀬</string>
+    <string name="heven">順位</string>
+    <string name="setting">設定</string>
+
+    <!-- tabacco screen -->
+    <string name="no1">No.1</string>
+    <string name="no2">No.2</string>
+    <string name="no3">No.3</string>
+    <string name="no1buttontitle">煙草壱</string>
+    <string name="no2buttontitle">煙草弍</string>
+    <string name="no3buttontitle">煙草参</string>
+    <string name="tabacco_setting">銘柄設定</string>
+    <string name="dialog1">タバコ1を吸ったよ❤</string>
+    <string name="dialog1_text">hoge</string>
+    <string name="dialog2">タバコ2を吸ったよ❤</string>
+    <string name="dialog2_text">hogehoge</string>
+    <string name="dialog3">タバコ3を吸ったよ❤</string>
+    <string name="dialog3_text">ほげええええええええ!!</string>
+
+    <!-- tabacco setting screen -->
+    <string name="no1title">煙草壱の設定</string>
+    <string name="no1name">煙草壱の名称</string>
+    <string name="no1price">煙草壱の価格</string>
+    <string name="no1num">煙草壱の本数</string>
+    <string name="no2title">煙草弍の設定</string>
+    <string name="no2name">煙草弍の名称</string>
+    <string name="no2price">煙草弍の価格</string>
+    <string name="no2num">煙草弍の本数</string>
+    <string name="no3title">煙草参の設定</string>
+    <string name="no3name">煙草参の名称</string>
+    <string name="no3price">煙草参の価格</string>
+    <string name="no3num">煙草参の本数</string>
+    <string name="menu_button">目録</string>
+
+    <!-- memory screen -->
+    <string name="price_title">金額</string>
+    <string name="total_price">総額</string>
+    <string name="price_text">タバコを吸うと金額が表示されます</string>
+    <string name="total_tax">総納税額</string>
+    <string name="today_price">本日</string>
+    <string name="count_title">本数</string>
+    <string name="total_count">総数</string>
+    <string name="count_text">タバコを吸うと本数が表示されます</string>
+    <string name="today_count">本日</string>
+    <string name="time_title">時間</string>
+    <string name="lifespan">寿命</string>
+    <string name="life_text">失った命</string>
+    <string name="lost_time">タバコ時間</string>
+    <string name="lifespan_text">タバコで失った命が表示されます </string>
+    <string name="lost_time_text">タバコに使った時間が表示されます</string>
+
+    <!-- heven screen -->
+    <string name="user_ranking_title">天国に一番近い</string>
+    <string name="user_ranking_title2">ランキング</string>
+    <string name="ranking_hint">ランキングスペース</string>
+
+    <!-- medal screen -->
+    <string name="medal_list"> </string>
+    <string name="medal_description">勲章の説明などが載ります</string>
+    <string name="medal_image">画像</string>
+    <string name="medal_title">勲章一覧</string>
+    <string name="image">勲章</string>
+
+    <!-- town screen -->
+
+    <!-- monster screen -->
+    <string name="point_title">所持金</string>
+    <string name="grow">貢ぐ</string>
+    <string name="favorability_title">経験値</string>
+    <string name="level">好感度</string>
+    <string name="monster_tabacco_1">壱</string>
+    <string name="monster_tabacco_2">弍</string>
+    <string name="monster_tabacco_3">参</string>
+    <string name="fire">吸う</string>
+
+    <!-- leave screen -->
+    <string name="message">お届け物でぇーす</string>
+
+    <!-- start tribute screen -->
+    <string name="chara_title">選択</string>
+    <string name="name_title">名付け</string>
+    <string name="name_hint">名前を入力</string>
+    <string name="hint">助言</string>
+
+    <!-- login screen -->
+    <string name="welcome">ようこそ</string>
+    <string name="input_name">名前を入力してください</string>
+    <string name="birth1">生年月日を</string>
+    <string name="birth2">入力してください</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <!-- limitation screen -->
+    <string name="limitationtitle1">煙草は</string>
+    <string name="limitationtitle2">二十歳になってから!!</string>
+    <string name="limitationtitle3">喫煙可能まで残り</string>
+    <string name="limitDay">X日</string>
+</resources>
